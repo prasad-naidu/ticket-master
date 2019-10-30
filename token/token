@@ -1,0 +1,38 @@
+// {
+//     "token": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDU2ODY1MGM5ZDQ0NjAwMTY5YWNkMGMiLCJ1c2VybmFtZSI6InByYXNhZDczNyIsImNyZWF0ZWRBdCI6MTU2NTk1MjYyNDMwNCwiaWF0IjoxNTY1OTUyNjI0fQ.RkZ2kYIAEUSVs4Y0izlgLZlc2A_-Fbo3B5k4syHjLAI
+// }
+  
+ register user 
+POST  dct-ticket-master.herokuapp.com/users/register
+body params 
+ username
+ email
+ password 
+   
+ login POST dct-ticket-master.herokuapp.com/users/login
+ body params 
+  email
+  password   
+
+
+  login customers
+  GET dct-ticket-master.herokuapp.com/customers
+  request header 
+  x-auth :token
+
+   
+
+  create customer 
+  POST dct-ticket-master.herokupp.com/customers
+  request header
+   x-auth :token
+
+DELETE dct-ticket-master.herokuapp.com/customers/:id
+request header
+x-auth :token
+ 
+ 
+   <td>{index+1}</td>
+                                 <td>{customer.name}</td>
+                                 <td>{customer.email}</td>
+                                 <td>{customer.mobile}</td>
